@@ -8,7 +8,7 @@ import axios from 'axios';
 
 const userApi=async()=>{
     const response =await axios.get(`https://reqres.in/api/users`);
-    return response
+    return response.data.data
 }
 
 function* getUserRequest() {
